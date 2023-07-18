@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/normalize.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <title>Frontend Mentor | Interactive card details form</title>
+
+
+</head>
+<body>
+  <main>
+    <div class="contenedor">
+      <div class="morado">
+        <div class="tarjetafrente">
+          
+          <div class="logo_tarjeta"><img src="images/card-logo.svg" alt="simbolo"></div>
+          <div class="tarjetafrente_numeros">  <span id="numero_tarjeta"></span></div>
+          <div>
+            <div class="tarjetafrente_mombre"><span id="nombre_tarjeta"></span></div>
+            <div class="tarjetafrente_fecha"><span class="spanmm" id="span_mm"></span><span class="spansl">/</span><span class="spanyy" id="span_yy"></span></div>
+          </div>
+          <div class="imagen_tarjeta_frente"><img class="img_tarjetas" src="images/bg-card-front.png" alt="front"></div>
+        </div>
+        <div class="tarjetaatras">
+          <div class="clave"><span id="span_clave"></span></div>
+          <img class="img_tarjetas" src="images/bg-card-back.png" alt="">
+        </div>
+      </div>
+      <div class="principal">
+        
+        <div class="formulario" id="formu">
+          <div class="fila cardholder">
+            <div class="text_morado"><span>Cardholder Name</span></div>
+            <div><input type="text" id="nombretarjeta" placeholder="e.g. Jane Appleseed">
+              <div class="error" id="error_1"><span id="error_cardholder"></span></div></div>
+          </div>
+          <div class="fila cardnumber">
+            <div  class="text_morado"><span>Card Number</span></div>
+            <div><input type="text" id="numerotarjeta"  placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+              <div class="error" id="error_2"><span id="error_cardnumber"></span></div>
+            </div>
+          </div>
+          <div class="fila fila_exp">
+            <div>
+              <div  class="text_morado"><span>Exp. Date (MM/YY)</span></div>
+              <div class="campo_exp">
+                <div><input type="text" id="mestarjeta" placeholder="MM" maxlength="2"></div>
+                <div><input type="text" id="anotarjeta" placeholder="YY" maxlength="2"></div>
+                <div class="error" id="error_3"><span id="error_expdate"></span></div>
+              </div>
+            </div>
+            <div class="cvc">
+              <div  class="text_morado"><span>CVC</span></div>
+              <div><input type="text" id="cvctarjeta" placeholder="e.g. 123" maxlength="3">
+                <div class="error" id="error_4"><span id="error_cvc"></span></div>
+              </div>
+            </div>
+          </div>
+          <div class="boton" id="confirmar"><span>Confirm</span></div>
+        </div>
+      <div class="completed" id="comp">
+        <div><img src="images/icon-complete.svg" alt="icono_complete"></div>
+        <div class="thank"><span>Thank you!</span></div>
+        <div class="compl_parr"><span>We've added your card details</span></div>
+        <div class="botoncontinuar" id="continuar"><span>Continue</span></div>
+      </div>
+  <div class="attribution" >
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/gabrielveliz" target="_blank">Gabriel Veliz</a>.
+  </div>
+
+      </div>
+
+
+      <!-- aqui comienza 2do bloque -->
+      
+    </div>
+  </main>
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  
+  
+
+</body>
+</html>

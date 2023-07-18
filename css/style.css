@@ -1,0 +1,311 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    padding: 1rem;
+    margin-top: 2rem;
+    color:#BBBBBB ;
+}
+.attribution a { color: #8A9EC1; }
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+    width: 100%;
+    height: 100%;
+}
+body,main{
+    width: 100%;
+    height: 100%;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+/* ***************** */
+.completed{
+    display: none;
+    margin: auto auto;
+    width: 35%;
+    grid-template-columns: 100%;
+    text-align: center;
+
+}
+.thank{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    letter-spacing: 1rem;
+}
+.compl_parr{
+    color:hsl(279, 6%, 55%) ;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+@media (max-width:500px){
+    .completed{
+        display: none;
+        margin: auto auto;
+        width: 90%;
+        grid-template-columns: 100%;
+        text-align: center;
+
+    }
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 100%;
+    max-width: 144rem;
+}
+
+.morado{
+    background-image: url("../images/bg-main-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:500px){
+    .contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .morado{
+        background-image: url("../images/bg-main-mobile.png");
+        height: 30rem;
+    }
+}
+
+.principal{
+    margin: auto auto;
+    width: 100%;
+}
+
+.formulario{
+    margin: auto auto;
+    width: 35%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+span{
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    
+}
+input{
+    margin-top: 0.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: hsl(278, 68%, 11%);
+}
+input::placeholder{
+    color: hsl(270, 3%, 87%) ;
+    font-size: 1.4rem;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+}
+.cardholder input,.cardnumber input,.cvc input{
+    width: 100%;
+    padding: 1rem;
+
+}
+.campo_exp input{
+    width: 90%;
+    padding: 1rem;
+}
+.cardholder input,.cardnumber input,.cvc input,.campo_exp input{
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 0.5rem;
+}
+input:focus{
+    border: 1px solid hsl(278, 94%, 30%);
+    outline: none;
+}
+.campo_exp,.fila_exp{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.fila{
+    margin-top: 2rem;
+}
+.boton,.botoncontinuar{
+    width: 100%;
+    padding: 1rem;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+.boton:hover,.botoncontinuar:hover{
+    background:linear-gradient(hsl(249, 99%, 64%) , hsl(278, 94%, 30%));
+}
+.text_morado{
+    color: hsl(278, 68%, 11%);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+@media (max-width:500px){
+
+        .formulario{
+            width: 90%;
+        }
+
+
+
+        .cardholder input,.cardnumber input,.cvc input{
+            padding: 2rem;
+
+        }
+        .campo_exp input{
+            width: 90%;
+            padding: 2rem;
+        }
+        .cardholder input,.cardnumber input,.cvc input,.campo_exp input{
+            border-radius: 1rem;
+        }
+
+        .boton,.botoncontinuar{
+
+            padding: 2rem;
+            border-radius: 1rem;
+        }
+
+}
+
+.tarjetafrente_numeros,
+.tarjetafrente_mombre,
+.tarjetafrente_fecha,
+.clave{
+    
+    color: hsl(0, 0%, 100%);
+    font-weight: 500;
+    width: 100%;
+}
+.tarjetafrente_numeros{
+    font-size: 3.5rem;
+}
+.tarjetafrente_mombre,
+.tarjetafrente_fecha,
+.clave{
+    font-size: 1.6rem;
+}
+.tarjetafrente,.tarjetaatras{
+    position: relative;
+    display: inline-block;
+}
+.tarjetafrente{
+    margin-top: 18rem;
+    margin-left: 10rem;
+}
+.tarjetaatras{
+    margin-top: 4rem;
+    margin-left: 18rem;
+}
+
+.tarjetafrente span,.tarjetaatras span,.logo_tarjeta img{
+    position: absolute;
+}
+.logo_tarjeta img{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.tarjetafrente_numeros span{
+    margin-top: 14rem;
+    margin-left: 2rem;
+    width: 100%;
+}
+.tarjetafrente_mombre span{
+    margin-left: 2rem;
+    margin-top: 20rem;
+}
+
+.spanmm{
+    margin-top: 20rem;
+    margin-left: 36rem;
+}
+.spansl{
+    margin-top: 20rem;
+    margin-left: 38.5rem;
+}
+.spanyy{
+    margin-top: 20rem;
+    margin-left: 40rem;
+}
+
+.clave span{
+    margin-top: 11rem;
+    margin-left: 35rem;
+}
+
+@media (max-width:500px){
+    .tarjetafrente_numeros{
+        font-size: 2.2rem;
+    }
+
+    .tarjetafrente,.tarjetaatras{
+        position: absolute;
+        
+    }
+    .tarjetafrente{
+        margin-top: 18rem;
+        margin-left: 1rem;
+        z-index: 2;
+    }
+    .tarjetaatras{
+        margin-top: 7rem;
+        margin-left: 7rem;
+        z-index: 1;
+    }
+    .imagen_tarjeta_frente img,.tarjetaatras img{
+        width: 30rem;
+    }
+
+
+    .logo_tarjeta img{
+
+        width: 7rem;
+    }
+    .tarjetafrente_numeros span{
+        margin-top: 9rem;
+        margin-left: 2rem;
+
+    }
+    .tarjetafrente_mombre span{
+        margin-top: 13rem;
+        margin-left: 2rem;
+        
+    }
+    
+    .spanmm{
+        margin-top: 13rem;
+        margin-left: 21.5rem;
+    }
+    .spansl{
+        margin-top: 13rem;
+        margin-left: 24rem;
+    }
+    .spanyy{
+        margin-top: 13rem;
+        margin-left: 25.5rem;
+    }
+    .clave span{
+        margin-top: 7.2rem;
+        margin-left: 22rem;
+    }
+
+}
+
+.error{
+    color: hsl(0, 100%, 66%);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+}
